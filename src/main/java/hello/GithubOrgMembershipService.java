@@ -51,8 +51,9 @@ public class GithubOrgMembershipService implements MembershipService {
 
     /**
      * is current logged in user has role
-     * 
+     *
      * @param roleToTest "member" or "admin"
+     * @param oauthToken oauth token
      * @return if the current logged in user has that role
      */
 
