@@ -183,7 +183,7 @@
                     <archive>
                         <manifest>
                             <!-- full package name of class with the main you want to run -->
-                            <mainClass>helloApplication</mainClass>
+                            <mainClass>hello.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
