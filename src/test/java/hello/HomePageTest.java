@@ -77,4 +77,12 @@ public class HomePageTest {
                 .andExpect(xpath("//*[@id=\"navbarTogglerDemo03\"]/ul[1]/li[2]/a").exists())
                 .andExpect(xpath("//*[@id=\"navbarTogglerDemo03\"]/ul[1]/li[2]/a").string("Earthquakes"));
     }
+
+    @Test
+    public void getHomePage_hasCorrectUsers() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
+                .andExpect(status().isOk())
+                .andExpect(xpath("//*[@id=\"navbarTogglerDemo03\"]/ul[1]/li[3]/a").exists())
+                .andExpect(xpath("//*[@id=\"navbarTogglerDemo03\"]/ul[1]/li[3]/a").string("Users"));
+    }
 }
